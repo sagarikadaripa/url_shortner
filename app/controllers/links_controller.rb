@@ -1,4 +1,5 @@
 class LinksController < ApplicationController
+  before_action :set_link, only: [:show]
   def create
     @link = Link.new(link_params)
     if @link.save
@@ -7,6 +8,10 @@ class LinksController < ApplicationController
       index
       render :index,status: :unprocessable_entity
     end
+  end
+
+  def show
+
   end
 
   def index

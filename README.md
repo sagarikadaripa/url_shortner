@@ -16,3 +16,6 @@
 - This should run in the background to keep the application fast
 - If a URL is edited, we should update the title, description, and image for it
 - We should paginate the list of shortened URLS
+
+# Chart Display
+- Utilized the Chartkick gem to display the graph
